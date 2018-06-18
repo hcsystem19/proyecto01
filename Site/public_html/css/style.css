@@ -17,27 +17,28 @@ body {
     background: #e9e9e9;
 }
 header {
-    background: #2c3e50;
-    width: 100%;
-    padding: 20px;
+    background: #fff;
+    width: 90%;
     /*FLEX*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row no-wrap;
+    border-bottom: 1px solid #2c3e50;
+    position: fixed;
 }
 header .logo {
-    color: #fff;
+    color: #2c3e50;
     font-size: 26px;
 }
 header .logo img {
-    width: 100px;
+    width: 85px;
     vertical-align: top;
 }
 header .logo a {
-    color:#fff;
+    color:#2c3e50;
     text-decoration:none;
-    line-height: 83px;
+    line-height: 73px;
 }
 header nav {
     width: 30%;
@@ -46,16 +47,17 @@ header nav {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: right; 
+    margin-right: 15px;
 }
 header nav a {
-    background: #c0392b;
-    color: #fff;
+    background: #fff;
+    color: #2c3e50;
     text-align: center;
     text-decoration: none;
     padding: 10px;
 }
 header nav a:hover {
-    background: #e74c3c;
+    color: #933475;
 }
 div.arrows{
     display: none;
@@ -63,9 +65,9 @@ div.arrows{
 }
 .main {
     background: #fff;
-    padding: 20px;
+    padding: 73px 20px 20px 20px;
     /*FLEX*/       
-    flex:1 1 50%;
+    flex:1 1 70%;
 }
 .main article {
     margin-bottom: 20px;
@@ -80,44 +82,49 @@ div.arrows{
 .main article img {
     
 }
+.main article p {
+    line-height: 1.5em;
+    padding: 10px 15px;
+}
+.main article p span {
+    color:#2c3e50;
+}
 .main article:nth-last-child(1){
     margin-bottom: 0px;
     padding-bottom: 0px;
     border-bottom: none;
 }
-#left{
-    background: #00ff00;
+
+#right{
+    background: #2c3e50;
+    padding: 73px 20px 20px 20px;
     /*FLEX*/
-    flex: 1 1 25%;
+    flex: 1 1 30%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
 }
-#left .widget {
-    background: #000;
-    height: 200px;
-    margin:10px;
+#right h2 {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+#right .widget {
+    display: flex;
+    flex-direction: column;
+    margin:10px 15px;
     /*width: 250px;*/
 }
-#left .widget img {
+#right .widget img {
     max-width: 100%;
     height: 100%;
 }
-#right{
-    background: #ff0000;
-    /*FLEX*/
-    flex: 1 1 25%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-#right .widget {
-    background: #0000ff;
-    height: 200px;
-    margin:10px;
-    /*width: 250px;*/
+#right .widget h3 {
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 0px;
 }
 footer {
     background: #2c3e50;
