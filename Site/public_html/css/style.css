@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css?family=Lato');
 
 .contenedor {
     width: 90%;
@@ -21,13 +21,15 @@ body {
 header {
     background: #fff;
     width: 90%;
+    max-width: 1200px;
+    border-bottom: 1px solid #2c3e50;
+    position: fixed;
+    z-index: 1000;
     /*FLEX*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row no-wrap;
-    border-bottom: 1px solid #2c3e50;
-    position: fixed;
 }
 header .logo {
     color: #2c3e50;
@@ -100,33 +102,37 @@ div.arrows{
 #right{
     background: #2c3e50;
     padding: 73px 20px 20px 20px;
+    min-width: 250px;
     /*FLEX*/
     flex: 1 1 30%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
 }
 #right h2 {
     color: #fff;
     font-size: 1.1em;
     padding: 10px 15px;
     text-transform: uppercase;
+    /*FLEX*/
+    align-self: flex-start;
 }
-#right .widget {
-    display: flex;
-    flex-direction: column;
-    margin:10px 15px;
-    /*width: 250px;*/
-}
+
 div.slider1{
-    max-width: 30%;
+    max-width: 90%;
 }
-#right .widget img {
-    max-width: 100%;
-    height: 100%;
+#right div.slider1 h3 {
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 0px;
+    text-align: center;
 }
-#right .widget h3 {
+div.slider2{
+    max-width: 90%;
+}
+#right div.slider2 h3 {
     color: #fff;
     font-size: 0.8em;
     padding: 10px 0px;
@@ -159,96 +165,9 @@ footer .links a:hover {
     background: #e74c3c;
 }
 
-@media screen and (max-width:800px){
-    .contenedor{
-        flex-direction: column;
-    }
-    header {
-        flex-direction: column;
-        padding: 0;
-    }
-    header .logo {
-        margin: 20px 0;
-    }
-    header .logo img {
-        width: 70px;
-    }
-    header .logo a {
-        line-height: 58px;
-    }
-    header nav {
-        display: none;
-    }
-    div.arrows{
-        width: 100%;
-        background: #2c3e50;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    div.arrows i {
-        color: #fff;
-        font-size: 68px;
-        line-height: 35px;
-        cursor: pointer;
-    }
-    #arrow{
-    }
-    
+@media screen and (max-width:925px){
     #right {
-        display: none;
-        flex-direction: row;
-    }
-    #left {
-        display: none;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-    #right .widget{
-        flex-grow: 1;
-    }
-    #left .widget{
-        flex-grow: 1;
-    }
-}
-@media screen and (max-width:420px){
-    .contenedor{
-        width: 100%;
-    }
-    header{
-       
-    }
-    header .logo img {
-        width: 50px;
-    }
-    header .logo a {
-        line-height: 41px;
-    }
-    header .logo {
-        font-size: 18px;
-    }
-    .main{
-        padding: 0px 20px 20px 20px;
-    }
-    .main article img{
-        width: 200px;
-    }    
-    #right {
-        display: none;
         flex-direction: column;
-    }
-    #left {
-        display: none;
-        flex-direction: column;
-    }
-    footer{
-        padding: 0;
-    }
-    footer .links{
-        width: 100%;
-    }
-    footer .links a{
-        flex: 1 1 25%;
+        justify-content: space-around;
     }
 }
