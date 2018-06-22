@@ -1,41 +1,12 @@
 $(document).ready(function () {
-    var estadoLeft = false;
-    var estadoRight = false;
-    function Animated() {
-        $('#btn-l').fadeOut(1000);
-        setTimeout(function () {
-            $('#btn-l').fadeIn(1000);
-        }, 500);
-        $('#btn-r').fadeOut(1000);
-        setTimeout(function () {
-            $('#btn-r').fadeIn(1000);
-        }, 500);
-    }
-    setInterval(Animated, 1000);
-    $('#btn-l').click(function () {
-        if (estadoLeft === true) {
-            $('#left').slideToggle().css({"display":"flex"});
-            $(this).removeClass("fas fa-caret-up").addClass("fas fa-caret-down");            
-            estadoLeft = false;
-        } else {
-            $('#left').slideToggle().css({"display":"flex"});
-            $(this).removeClass("fas fa-caret-down").addClass("fas fa-caret-up");
-            estadoLeft = true;
-        }
+       $('.slider1').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
-    $('#btn-r').click(function () {
-        if (estadoRight === true) {
-            $('#right').slideToggle();
-            $(this).removeClass("fas fa-caret-down").addClass("fas fa-caret-up");
-            estadoRight = false;
-        } else {
-            $('#right').slideToggle();
-            $(this).removeClass("fas fa-caret-up").addClass("fas fa-caret-down");
-            estadoRight = true;
-        }
-    });
-
-    $('.slider1').slick({
+    $('.slider2').slick({
         dots: false,
         infinite: true,
         speed: 300,
