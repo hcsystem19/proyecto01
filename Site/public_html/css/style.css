@@ -123,6 +123,15 @@ div.arrows{
 div.slider1{
     max-width: 90%;
 }
+div.slider1 a{
+    text-decoration: none;
+}
+div.slider1 a.uno {
+    background: url(../../images/Pineal.jpg);
+}
+div.slider1 img {
+    width: auto;
+}
 #right div.slider1 h3 {
     color: #fff;
     font-size: 0.8em;
@@ -131,6 +140,9 @@ div.slider1{
 }
 div.slider2{
     max-width: 90%;
+}
+div.slider2 a{
+    text-decoration: none;
 }
 #right div.slider2 h3 {
     color: #fff;
@@ -168,6 +180,62 @@ footer .links a:hover {
 @media screen and (max-width:925px){
     #right {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-around;  
     }
+    div.slider1 {
+        width: 50%;
+    }
+    div.slider2 {
+        width: 50%;
+    }
+}
+@media screen and (max-width:639px){
+    header nav {
+        display: none;
+    }
+    header {
+        width: 100%;
+    }
+     .contenedor {
+        width: 100%;
+    }
+     header .logo {
+        font-size: 22px;
+    }
+    header .logo img {
+        width: 74px;   
+    }
+    header .logo a {
+        line-height: 74px;
+    }
+    div.slider1 {
+        width: 70%;
+    }
+    div.slider2 {
+        width: 70%;
+    }
+}
+@media screen and (max-width:420px){
+    
+    
+    header .logo {
+        font-size: 18px;
+    }
+    header .logo img {
+        width: 64px;   
+    }
+    header .logo a {
+        line-height: 64px;
+    }
+    .main article img {
+        width: 200px;
+    }
+     div.slider1 {
+        width: 90%;
+    }
+    div.slider2 {
+        width: 90%;
+    }
+   
+    
 }
