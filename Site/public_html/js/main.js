@@ -5,7 +5,8 @@ $(document).ready(function () {
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true
+        autoplay: true,
+        autoplaySpeed: 3000
     });
     $('.slider2').slick({
         dots: false,
