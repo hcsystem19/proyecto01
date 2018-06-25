@@ -125,12 +125,18 @@ div.slider1{
 }
 div.slider1 a{
     text-decoration: none;
+    /*FLEX*/
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+    
 }
 div.slider1 a.uno {
-    background: url(../../images/Pineal.jpg);
+    
 }
 div.slider1 img {
-    width: auto;
+    height: 160px;
 }
 #right div.slider1 h3 {
     color: #fff;
@@ -184,6 +190,9 @@ footer .links a:hover {
     }
     div.slider1 {
         width: 50%;
+    }
+    div.slider1 img {
+        height: 200px;
     }
     div.slider2 {
         width: 50%;
