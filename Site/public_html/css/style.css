@@ -207,14 +207,14 @@ footer .links {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-footer .links a {
+footer a {
     color: #fff;
     text-decoration: none;
     padding: 10px;
     text-align: center;
     text-decoration: none;
 }
-footer .links a:hover {
+footer a:hover {
     color: #933475;
 }
 
